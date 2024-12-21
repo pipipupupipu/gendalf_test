@@ -1,0 +1,10 @@
+1. установить зависимости (composer, npm) используя менеджер пакетов
+2. git clone https://github.com/pipipupupipu/gendalf_test.git - клонировать репозиторий
+3. cd gendalf_test - перейти в корень проекта
+4. /composer istall - установить основные зависимости, в том числе laravel
+5. /npm install - установить зависимости javascript, css и прочего
+6. cp .env.example .env - создать файл .env на основе .env.example
+7. в файле .env указать параметры подключения к БД
+8. php artisan key:generate - сгенерировать ключ шифрования laravel, который хранится в .env и учавствует в шифровании
+9. php artisan mirgate - создать таблицы, а так же запись администратора admin admin
+10. composer run dev --timeout=0 - запускает и бэкенд и фронтенд, аналог /php artisan serve + /npm run dev
